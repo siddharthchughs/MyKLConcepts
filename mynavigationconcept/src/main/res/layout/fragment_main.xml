@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.mynavigationconcept.viewmodel.MyCustomMainViewModel" />
+    </data>
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.MainFragment">
+
+        <EditText
+            android:id="@+id/edt_InputData"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="268dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_Main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_700"
+            android:textSize="18sp"
+            android:onClick="@{()-> viewModel.getCountUpdate()}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_InputData"
+            app:layout_constraintVertical_bias="0.114" />
+
+        <TextView
+            android:id="@+id/tv_Result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/btn_Main"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="10dp"
+            android:text="@{String.valueOf(viewModel.resultTotal)}"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  </ScrollView>
+</layout>

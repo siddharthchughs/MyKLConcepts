@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyKLConcepts</string>
+    <string name="_labelHeader">Calculate Your</string>
+    <string name="label_Age">AGE</string>
+    <string name="label_Minutes">Minutes</string>
+    <string name="label_date">Select Data</string>
+    <string name="label_Date_Selected">Selected Date</string>
+    <string name="label_AgeInMinutes">Age In Minutes till date</string>
+</resources>

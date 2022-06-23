@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="_labelHeader">Calculate Your</string>
+    <string name="label_Age">AGE</string>
+    <string name="label_Minutes">Minutes</string>
+</resources>

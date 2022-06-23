@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_light"
+    android:foregroundGravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_Header"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:gravity="center|center_horizontal"
+        android:text="@string/_labelHeader"
+        android:textColor="@color/icons"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_Age"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/accent"
+        android:fontFamily="@font/source_serif_pro_semibold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/label_Age"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_Header"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="@+id/tv_Header"
+        app:layout_constraintTop_toBottomOf="@id/tv_Header" />
+
+    <TextView
+        android:id="@+id/tv_In_Minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:fontFamily="@font/source_serif_pro_semibold"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/label_Minutes"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_Header"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="@+id/tv_Header"
+        app:layout_constraintTop_toBottomOf="@id/tv_Age" />
+
+    <TextView
+        android:id="@+id/tv_SelectDate"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:fontFamily="@font/source_serif_pro_semibold"
+        android:gravity="center"
+        android:text="@string/label_date"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_In_Minutes"
+        app:layout_constraintEnd_toEndOf="@+id/tv_Header"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="@+id/tv_Header"
+        tools:layout_editor_absoluteY="74dp" />
+
+    <TextView
+        android:id="@+id/tv_DateSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:fontFamily="@font/source_serif_pro_semibold"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_SelectDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/tv_Label_Select"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:fontFamily="@font/source_serif_pro_semibold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/label_Date_Selected"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_DateSelected"
+        app:layout_constraintEnd_toEndOf="@+id/tv_Header"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="@+id/tv_Header"
+        tools:layout_editor_absoluteY="74dp" />
+
+    <TextView
+        android:id="@+id/tv_Label_Minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:fontFamily="@font/source_serif_pro_semibold"
+        android:gravity="center|left"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/label_AgeInMinutes"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_Label_Select"
+        app:layout_constraintEnd_toEndOf="@+id/tv_Header"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="@+id/tv_Header"
+ />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
